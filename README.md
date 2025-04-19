@@ -12,7 +12,7 @@ const test = async () => {
   await timetable.init();
 
   // 학교 검색 및 특정 학교 찾기
-  const schoolList = await timetable.search('광명');
+  const schoolList = await timetable.search('인천');
   console.log(schoolList);
   const targetSchool = schoolList.find((school) => {
     return school.region === '인천' && school.name === '인주중학교';
